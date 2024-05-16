@@ -21,9 +21,6 @@ try:
 
     button = browser.find_element('xpath', '//button[text() = "Submit"]')
     button.click()
-
+    alert_handler()
 finally:
-    # успеваем скопировать код за 30 секунд
-    #alert_handler()
-    time.sleep(10)
     browser.quit()
